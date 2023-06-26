@@ -70,7 +70,7 @@
                     Inizia la tua prova gratuita
                   </button>
                 </div>
-                <span class="btn btn-transparent">
+                <span>
                   <a href="#">Annulla in qualsiasi momento</a>
                 </span>
               </div>
@@ -85,32 +85,68 @@
         </div>
       </div>
       <!-- business plan-->
-      <div class="container">
-        <div>
+      <div class="container business-plan">
+        <div class="business-plan-top">
           <h2>Trova il piano business che fa per te</h2>
-          <input
-            type="checkbox"
-            name="Fatturazione mensile"
-            id=""
-          />Fatturazione mensile
-          <input
-            type="checkbox"
-            name="Fatturazione annuale"
-            id=""
-          />Fatturazione annuale
+          <span>
+            <input type="radio" name="Fatturazione mensile" id="" />
+            Fatturazione mensile
+          </span>
+          <span>
+            <input type="radio" name="Fatturazione annuale" id="" />
+            Fatturazione annuale
+          </span>
         </div>
-        <div class="business-plan taller">
+        <div class="business-plan-cards">
           <!-- business plan cards-->
-          <div class="card bordered-black">
-            <div><i class="fa-solid fa-user"></i> Singolo</div>
-            <h2>Professional</h2>
-            <p>€ 12.00</p>
-            <address>/mese</address>
+          <div class="card">
+            <div class="card-top"><i class="fa-solid fa-user"></i> Singolo</div>
+            <div class="card-container">
+              <div>
+                <h2>Professional</h2>
+                <p>€ 12.00</p>
+                <address>/mese</address>
+              </div>
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-user"></i>1 utente</li>
+                  <li>
+                    <i class="fa-solid fa-folder"></i>Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Fuga, ullam.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-share-nodes"></i>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quaerat deserunt dolorum
+                    delectus nihil hic maiores?
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <button class="btn-blue">Prova gratis per 30 giorni</button>
+              </div>
+              <div>
+                <p>oppure <a href="#">acquista ora</a></p>
+              </div>
+              <div class="col-25 bordered-black"></div>
+              <div>
+                <ul>
+                  Punti Salienti del piano
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet
+                    consectetur.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="card bordered-black"></div>
           <div class="card bordered-black"></div>
         </div>
-        <div class="bordered-white small"></div>
+        <div class="business-plan-bottom bg-gray small"></div>
       </div>
       <!-- partner o carosello -->
       <div class="container partner-dropbox bg-purple">

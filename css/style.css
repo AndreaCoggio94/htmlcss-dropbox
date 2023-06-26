@@ -24,14 +24,20 @@
 
 /* # general */
 
+/* ul */
+
+ul {
+  list-style-type: none;
+}
+
+/* a */
+
 a {
   text-decoration: none;
   color: currentColor;
 }
 
-.btn {
-  /* display: inline-block; */
-}
+/* buttons */
 
 .btn-blue {
   color: var(--white);
@@ -39,6 +45,8 @@ a {
   border: none;
   padding: 10px 20px;
 }
+
+/* width */
 
 .big-container {
   width: 1200px;
@@ -62,10 +70,6 @@ nav {
   width: 100%;
   position: fixed;
   background-color: var(--white);
-}
-
-nav ul {
-  list-style-type: none;
 }
 
 nav li {
@@ -124,12 +128,51 @@ nav img {
 /* business plan */
 
 .business-plan {
-  display: flex;
-  justify-content: space-between;
+  /* margin-top: 80px; */
 }
 
-.business-plan > .card {
+.business-plan-top {
+  padding: 80px 0 25px;
+}
+
+.business-plan-top > h2 {
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+
+.business-plan-top > span {
+  padding-right: 20px;
+}
+
+.business-plan-cards {
+  display: flex;
+  justify-content: space-between;
+  min-height: 950px;
+}
+
+.business-plan-cards > .card {
   width: 30%;
+  border: 2px solid var(--light-gray);
+}
+
+.business-plan-cards .card-container {
+  padding: 20px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.business-plan .card-top {
+  height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.business-plan .card-top > i {
+  padding-right: 5px;
 }
 
 /* partner  dropbox */
@@ -222,6 +265,10 @@ footer {
 
 .debug .col-30 {
   width: 30%;
+}
+
+.debug. .col-25 {
+  width: 25%;
 }
 
 .debug .col-20 {
