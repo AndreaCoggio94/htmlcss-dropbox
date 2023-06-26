@@ -103,7 +103,28 @@ nav {
   width: 50%;
 }
 
+/* free trial section */
+
+.free-trial-bg {
+  background-color: var(--light-blue);
+}
+
+.free-trial {
+  display: flex;
+}
+
+/* frequent questions */
+
 /* # footer */
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.footer-links {
+  display: flex;
+}
 
 /* # debug */
 
@@ -119,6 +140,10 @@ nav {
 
 .debug .col-60 {
   width: 60%;
+}
+
+.debug .col-50 {
+  width: 50%;
 }
 
 .debug .col-40 {
