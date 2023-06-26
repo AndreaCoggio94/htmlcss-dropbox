@@ -30,12 +30,14 @@ a {
 }
 
 .btn {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .btn-blue {
   color: var(--white);
   background-color: var(--primary-btn);
+  border: none;
+  padding: 10px 20px;
 }
 
 .big-container {
@@ -103,12 +105,12 @@ nav img {
   display: flex;
   flex-direction: column;
   gap: 2%;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .jumbotron-freetrial p,
 .btn {
-  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .jumbotron-freetrial i {
