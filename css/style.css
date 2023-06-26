@@ -24,6 +24,20 @@
 
 /* # general */
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.btn {
+  display: inline-block;
+}
+
+.btn-blue {
+  color: var(--white);
+  background-color: var(--primary-btn);
+}
+
 .big-container {
   width: 1200px;
   margin: 0 auto;
@@ -34,10 +48,6 @@
   margin: 0 auto;
 }
 
-.flex {
-  display: flex;
-}
-
 /* # header */
 
 /* nav bar */
@@ -45,14 +55,68 @@
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background-color: var(--white);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  padding: 0 15px;
+  line-height: 30px;
+}
+
+nav img {
+  height: 1rem;
 }
 
 /* # main */
 
 /* jumbotron */
 
+.jumbotron {
+  padding-top: 50px;
+  background-color: var(--light-blue);
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+
+.jumbotron > .big-container {
+  padding-top: 80px;
+}
+
 .jumbotron-freetrial {
   display: flex;
+}
+
+.jumbotron-freetrial > .col-40 {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  /* justify-content: space-between; */
+}
+
+.jumbotron-freetrial p,
+.btn {
+  padding-bottom: 20px;
+}
+
+.jumbotron-freetrial i {
+  font-size: 3rem;
+}
+
+.jumbotron-freetrial img {
+  width: 100%;
 }
 
 /* business plan */
