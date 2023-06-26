@@ -1,5 +1,5 @@
 :root {
-  /* palette di colori */
+  /* colors palette */
   --white: #ffffff;
   --black: #080808;
   --red: #ff0000;
@@ -7,7 +7,126 @@
   --gray: #808080;
   --light-gray: #d6d6d6;
   --purple: #800080;
+  --pink: #ffc0cb;
+  --brown: #a52a2a;
   --light-blue: #b4d0e7;
   --blue: #2e2ec1;
   --primary-btn: #52a6e7;
+}
+
+/* # reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* # general */
+
+.big-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* # header */
+
+/* nav bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* # main */
+
+/* jumbotron */
+
+.jumbotron-freetrial {
+  display: flex;
+}
+
+/* # footer */
+
+/* # debug */
+
+/* width */
+
+.debug .col-100 {
+  width: 100%;
+}
+
+.debug .col-80 {
+  width: 80%;
+}
+
+.debug .col-60 {
+  width: 60%;
+}
+
+.debug .col-40 {
+  width: 40%;
+}
+
+.debug .col-20 {
+  width: 20%;
+}
+
+/* height */
+
+.debug .smaller {
+  height: 80px;
+}
+
+.debug .small {
+  height: 120px;
+}
+
+.debug .tall {
+  height: 200px;
+}
+
+.debug .taller {
+  height: 400px;
+}
+
+/* borderd */
+
+.debug .bordered-white {
+  border: 2px solid var(--white);
+}
+.debug .bordered-black {
+  border: 2px solid var(--black);
+}
+/* background color */
+
+.debug .bg-white {
+  background-color: var(--white);
+}
+
+.debug .bg-black {
+  background-color: var(--black);
+}
+.debug .bg-red {
+  background-color: var(--red);
+}
+.debug .bg-green {
+  background-color: var(--green);
+}
+.debug .bg-gray {
+  background-color: var(--gray);
+}
+.debug .bg-purple {
+  background-color: var(--purple);
+}
+.debug .bg-pink {
+  background-color: var(--pink);
+}
+.debug .bg-brown {
+  background-color: var(--brown);
 }
