@@ -89,6 +89,20 @@ nav {
 
 /* designit */
 
+.designit {
+  display: flex;
+}
+
+.designit-partners {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.designit .card {
+  height: 100px;
+  width: 50%;
+}
+
 /* # footer */
 
 /* # debug */
@@ -109,6 +123,14 @@ nav {
 
 .debug .col-40 {
   width: 40%;
+}
+
+.debug .col-33 {
+  width: calc(100% / 3);
+}
+
+.debug .col-30 {
+  width: 30%;
 }
 
 .debug .col-20 {
