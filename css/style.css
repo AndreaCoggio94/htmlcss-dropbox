@@ -34,6 +34,10 @@
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
 /* # header */
 
 /* nav bar */
@@ -50,6 +54,40 @@ nav {
 .jumbotron-freetrial {
   display: flex;
 }
+
+/* business plan */
+
+.business-plan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-plan > .card {
+  width: 30%;
+}
+
+/* partner  dropbox */
+
+.partner-dropbox {
+  display: flex;
+}
+
+/* dropbox business */
+
+.dropbox-biz {
+}
+
+.dropbox-biz-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropbox-biz-cards > .card {
+  background-color: var(--red);
+  width: 30%;
+}
+
+/* designit */
 
 /* # footer */
 
@@ -98,10 +136,10 @@ nav {
 /* borderd */
 
 .debug .bordered-white {
-  border: 2px solid var(--white);
+  border: 2px dashed var(--white);
 }
 .debug .bordered-black {
-  border: 2px solid var(--black);
+  border: 2px dashed var(--black);
 }
 /* background color */
 
