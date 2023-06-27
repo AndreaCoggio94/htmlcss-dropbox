@@ -316,16 +316,49 @@ nav img {
 /* dropbox business */
 
 .dropbox-biz {
+  background-color: var(--white);
+  margin-bottom: 150px;
+}
+
+.dropbox-biz h2 {
+  font-size: 3rem;
+}
+
+.dropbox-biz-top {
+  padding-bottom: 30px;
 }
 
 .dropbox-biz-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5%;
 }
 
 .dropbox-biz-cards > .card {
-  background-color: var(--red);
   width: 30%;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.dropbox-biz-cards .card-img {
+  height: 220px;
+}
+
+.dropbox-biz-bottom {
+  margin-top: 100px;
+}
+
+.dropbox-biz-bottom h2 {
+  margin: 30px auto;
+}
+
+.dropbox-biz-bottom a {
+  color: var(--blue);
+  text-decoration: underline;
 }
 
 /* designit */
