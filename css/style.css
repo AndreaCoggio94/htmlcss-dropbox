@@ -97,6 +97,13 @@ button {
   padding: 10px 20px;
 }
 
+.btn-white-alternative {
+  color: var(--black);
+  background-color: var(--white);
+  border: none;
+  padding: 10px 20px;
+}
+
 /* width */
 
 .container-fluid {
@@ -452,12 +459,22 @@ nav img {
 
 /* free trial section */
 
-.free-trial-bg {
+.free-trial {
   background-color: var(--light-blue);
 }
 
-.free-trial {
-  display: flex;
+.free-trial .row {
+  align-items: center;
+  justify-content: space-between;
+  height: 360px;
+}
+
+.free-trial h2 {
+  font-size: 3rem;
+}
+
+.free-trial button {
+  width: 100%;
 }
 
 /* frequent questions */
@@ -489,7 +506,7 @@ footer {
   width: 60%;
 }
 
-.debug .col-50 {
+.col-50 {
   width: 50%;
 }
 
@@ -501,7 +518,7 @@ footer {
   width: calc(100% / 3);
 }
 
-.debug .col-30 {
+.col-30 {
   width: 30%;
 }
 
