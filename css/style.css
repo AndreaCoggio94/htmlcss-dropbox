@@ -479,6 +479,11 @@ nav img {
 
 /* frequent questions */
 
+.frequent-questions {
+  background-color: var(--white);
+  margin: 150px auto;
+}
+
 /* # footer */
 
 footer {
