@@ -503,13 +503,46 @@ nav img {
 
 /* # footer */
 
-footer {
+.footer {
+  padding-top: 100px;
   background-color: var(--black);
   color: var(--white);
 }
 
-.footer-links {
+.footer .big-container {
+  height: 100%;
+}
+
+.footer-link {
+  min-height: 570px;
   display: flex;
+  width: calc(100% / 5);
+}
+
+.footer-link .row {
+  flex-direction: column;
+  gap: 5%;
+}
+
+.footer-link ul {
+  line-height: 50px;
+}
+
+.footer-link .line {
+  border-top: 2px solid var(--white);
+  width: 80%;
+}
+
+.footer-link .line,
+.language {
+}
+
+.footer-link i {
+  padding-right: 15px;
+}
+
+.footer-link .arrow {
+  padding-left: 5px;
 }
 
 /* # debug */
