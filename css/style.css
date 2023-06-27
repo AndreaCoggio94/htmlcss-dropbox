@@ -70,6 +70,13 @@ button {
   padding: 10px 20px;
 }
 
+.btn-white {
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  padding: 10px 20px;
+}
+
 /* width */
 
 .big-container {
@@ -159,6 +166,7 @@ nav img {
 /* business plan */
 
 .business-plan {
+  background-color: var(--white);
 }
 
 .business-plan-top {
@@ -262,8 +270,6 @@ nav img {
 .business-plan-bottom .card-container {
   padding: 20px 30px;
   height: 100%;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .business-plan-bottom .row {
@@ -289,6 +295,22 @@ nav img {
 
 .partner-dropbox {
   display: flex;
+  background-color: var(--white);
+  min-height: 520px;
+  margin: 150px auto;
+}
+
+.partner-dropbox .col-40 {
+  padding: 50px;
+}
+
+.partner-dropbox .col-40 > h3 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.partner-dropbox .col-40 > p {
+  margin-bottom: 20px;
 }
 
 /* dropbox business */
@@ -357,7 +379,7 @@ footer {
   width: 80%;
 }
 
-.debug .col-60 {
+.col-60 {
   width: 60%;
 }
 
@@ -365,7 +387,7 @@ footer {
   width: 50%;
 }
 
-.debug .col-40 {
+.col-40 {
   width: 40%;
 }
 
