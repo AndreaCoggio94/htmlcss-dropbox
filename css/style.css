@@ -484,6 +484,23 @@ nav img {
   margin: 150px auto;
 }
 
+.frequent-questions h2 {
+  font-size: 3rem;
+  padding-bottom: 50px;
+}
+
+.frequent-questions .row {
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid var(--light-gray);
+  height: 100px;
+  font-weight: bold;
+}
+
+.frequent-questions .row:last-child {
+  border-bottom: 2px solid var(--light-gray);
+}
+
 /* # footer */
 
 footer {
