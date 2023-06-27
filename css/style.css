@@ -24,6 +24,23 @@
 
 /* # general */
 
+/* font */
+
+header,
+main,
+footer {
+  font-family: "DM Serif Display", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
 /* ul */
 
 ul {
@@ -35,9 +52,16 @@ ul {
 a {
   text-decoration: none;
   color: currentColor;
+  display: block;
 }
 
 /* buttons */
+
+button {
+  font-family: "DM Serif Display", serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
 
 .btn-blue {
   color: var(--white);
@@ -60,22 +84,29 @@ a {
 
 /* # header */
 
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 /* nav bar */
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  width: 100%;
-  position: fixed;
+  min-height: 50px;
+  /* width: 100%; */
   background-color: var(--white);
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
   padding: 0 15px;
   line-height: 30px;
+  white-space: nowrap;
 }
 
 nav img {
@@ -128,7 +159,6 @@ nav img {
 /* business plan */
 
 .business-plan {
-  /* margin-top: 80px; */
 }
 
 .business-plan-top {
@@ -148,11 +178,13 @@ nav img {
   display: flex;
   justify-content: space-between;
   min-height: 950px;
+  margin-bottom: 5%;
 }
 
 .business-plan-cards > .card {
   width: 30%;
   border: 2px solid var(--light-gray);
+  font-size: 0.75rem;
 }
 
 .business-plan-cards .card-container {
@@ -173,6 +205,84 @@ nav img {
 
 .business-plan .card-top > i {
   padding-right: 5px;
+}
+
+.business-plan-cards .title {
+  line-height: 30px;
+}
+
+.business-plan-cards .title > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.business-plan-cards .title > p {
+  font-weight: bold;
+}
+
+.business-plan-cards li {
+  margin: 15px 0;
+}
+
+.business-plan-cards li > i {
+  padding-right: 5px;
+}
+
+.business-plan-cards button {
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.business-plan-cards .card-link {
+  color: var(--blue);
+  text-decoration: underline;
+  display: inline;
+}
+
+.business-plan-cards .card-line {
+  border-top: 2px solid var(--light-gray);
+  width: 20%;
+}
+
+.card-list-colored span {
+  font-weight: bold;
+}
+
+.card-list-colored i {
+  color: var(--primary-btn);
+  font-size: 1rem;
+}
+
+.business-plan-bottom .card {
+  border: 2px solid var(--light-gray);
+  font-size: 0.75rem;
+  min-height: 240px;
+}
+
+.business-plan-bottom .card-container {
+  padding: 20px 30px;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.business-plan-bottom .row {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.business-plan-bottom h3 {
+  font-size: 2rem;
+}
+
+.business-plan-bottom h4 {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+.business-plan-bottom p {
+  width: 70%;
 }
 
 /* partner  dropbox */
@@ -267,7 +377,7 @@ footer {
   width: 30%;
 }
 
-.debug. .col-25 {
+.debug .col-25 {
   width: 25%;
 }
 

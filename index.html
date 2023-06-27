@@ -14,15 +14,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- link -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="debug">
     <!-- header -->
-    <header>
+    <header class="main-header">
       <!-- fixed nav bar -->
       <nav>
-        <div>
+        <div class="row">
           <ul>
             <li>
               <a href="#"
@@ -34,7 +41,7 @@
             <li><a href="#">Piani e Prezzi</a></li>
           </ul>
         </div>
-        <div>
+        <div class="row">
           <ul>
             <li><a href="#">Supporto</a></li>
             <li><a href="#">Contatta l'ufficio vendite</a></li>
@@ -53,7 +60,7 @@
       <!-- jumbotron -->
       <div class="jumbotron">
         <div class="big-container">
-          <div class="">
+          <div>
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
           </div>
           <div class="jumbotron-freetrial">
@@ -97,17 +104,18 @@
             Fatturazione annuale
           </span>
         </div>
+        <!-- business plan cards-->
         <div class="business-plan-cards">
-          <!-- business plan cards-->
+          <!-- first card -->
           <div class="card">
             <div class="card-top"><i class="fa-solid fa-user"></i> Singolo</div>
             <div class="card-container">
-              <div>
-                <h2>Professional</h2>
+              <div class="title">
+                <h3>Professional</h2>
                 <p>€ 12.00</p>
                 <address>/mese</address>
               </div>
-              <div>
+              <div class="card-list">
                 <ul>
                   <li><i class="fa-solid fa-user"></i>1 utente</li>
                   <li>
@@ -125,12 +133,12 @@
                 <button class="btn-blue">Prova gratis per 30 giorni</button>
               </div>
               <div>
-                <p>oppure <a href="#">acquista ora</a></p>
+                <p>oppure <a class="card-link" href="#">acquista ora</a></p>
               </div>
-              <div class="col-25 bordered-black"></div>
-              <div>
+              <div class="card-line"></div>
+              <div class="card-list-colored">
                 <ul>
-                  Punti Salienti del piano
+                  <span>Punti Salienti del piano</span>
                   <li>
                     <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet
                     consectetur.
@@ -143,10 +151,132 @@
               </div>
             </div>
           </div>
-          <div class="card bordered-black"></div>
-          <div class="card bordered-black"></div>
+          <!-- second card -->
+          <div class="card">
+            <div class="card-top"><i class="fa-solid fa-user"></i> Singolo</div>
+            <div class="card-container">
+              <div class="title">
+                <h3>Professional</h2>
+                <p>€ 12.00</p>
+                <address>/mese</address>
+              </div>
+              <div class="card-list">
+                <ul>
+                  <li><i class="fa-solid fa-user"></i>1 utente</li>
+                  <li>
+                    <i class="fa-solid fa-folder"></i>Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Fuga, ullam.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-share-nodes"></i>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quaerat deserunt dolorum
+                    delectus nihil hic maiores?
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <button class="btn-blue">Prova gratis per 30 giorni</button>
+              </div>
+              <div>
+                <p>oppure <a class="card-link" href="#">acquista ora</a></p>
+              </div>
+              <div class="card-line"></div>
+              <div class="card-list-colored">
+                <ul>
+                  <span>Punti Salienti del piano</span>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet
+                    consectetur.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet
+                    consectetur.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="card">
+            <div class="card-top"><i class="fa-solid fa-user"></i> Singolo</div>
+            <div class="card-container">
+              <div class="title">
+                <h3>Professional</h2>
+                <p>€ 12.00</p>
+                <address>/mese</address>
+              </div>
+              <div class="card-list">
+                <ul>
+                  <li><i class="fa-solid fa-user"></i>1 utente</li>
+                  <li>
+                    <i class="fa-solid fa-folder"></i>Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Fuga, ullam.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-share-nodes"></i>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quaerat deserunt dolorum
+                    delectus nihil hic maiores?
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <button class="btn-blue">Prova gratis per 30 giorni</button>
+              </div>
+              <div>
+                <p>oppure <a class="card-link" href="#">acquista ora</a></p>
+              </div>
+              <div class="card-line"></div>
+              <div class="card-list-colored">
+                <ul>
+                  <span>Punti Salienti del piano</span>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet
+                    consectetur.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="business-plan-bottom bg-gray small"></div>
+        <div class="business-plan-bottom">
+          <div class="card">
+            <div class="card-top">
+              <i class="fa-solid fa-user"></i> Singolo
+            </div>
+            <div class="card-container">
+              <div>
+                <div class="row">
+                  <h3>Enterprise</h3>
+                  <button class="btn-blue">Contatta l'ufficio vendite</button>
+                </div>
+              </div>
+              <div>
+                <h4>Contatta l'ufficio vendite per i prezzi</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veniam, deserunt ullam perferendis quidem id labore officiis fugiat asperiores neque? Laboriosam vitae error quis, nulla accusantium eos aut pariatur magni?</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- partner o carosello -->
       <div class="container partner-dropbox bg-purple">
