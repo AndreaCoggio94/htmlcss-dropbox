@@ -25,11 +25,6 @@
 
 /* # reset */
 
-/* prettier */
-/* .prettierignore {
-    svg
-} */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -37,6 +32,8 @@
 }
 
 /* # general */
+
+/* svg */
 
 svg {
   width: 100%;
@@ -53,12 +50,21 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
+/* img */
+
 img {
   max-width: 100%;
 }
 
+/* flex */
+
 .row {
   display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ul */
@@ -102,6 +108,28 @@ button {
   background-color: var(--white);
   border: none;
   padding: 10px 20px;
+}
+
+/* column */
+
+.col-60 {
+  width: 60%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.col-33 {
+  width: calc(100% / 3);
+}
+
+.col-30 {
+  width: 30%;
 }
 
 /* width */
@@ -192,6 +220,7 @@ nav img {
 
 .jumbotron-freetrial img {
   width: 100%;
+  margin-bottom: -60px;
 }
 
 /* business plan */
@@ -507,42 +536,50 @@ nav img {
   padding-top: 100px;
   background-color: var(--black);
   color: var(--white);
+  height: 570px;
 }
 
 .footer .big-container {
   height: 100%;
 }
 
-.footer-link {
-  min-height: 570px;
-  display: flex;
-  width: calc(100% / 5);
+.big-container > .column {
+  height: 100%;
+  gap: 10%;
 }
 
-.footer-link .row {
+.footer-link {
+  display: flex;
   flex-direction: column;
+  width: calc(100% / 5);
   gap: 5%;
+  min-height: 60%;
+}
+
+.footer-link h3 {
+  padding-bottom: 15px;
 }
 
 .footer-link ul {
   line-height: 50px;
 }
 
-.footer-link .line {
+.footer .language {
+  justify-content: space-around;
+  min-height: 100px;
+}
+
+.footer .language > .line {
   border-top: 2px solid var(--white);
   width: 80%;
 }
 
-.footer-link .line,
-.language {
-}
-
-.footer-link i {
+.footer .language i {
   padding-right: 15px;
 }
 
-.footer-link .arrow {
-  padding-left: 5px;
+.footer .language .arrow {
+  padding-left: 10px;
 }
 
 /* # debug */
@@ -555,26 +592,6 @@ nav img {
 
 .debug .col-80 {
   width: 80%;
-}
-
-.col-60 {
-  width: 60%;
-}
-
-.col-50 {
-  width: 50%;
-}
-
-.col-40 {
-  width: 40%;
-}
-
-.col-33 {
-  width: calc(100% / 3);
-}
-
-.col-30 {
-  width: 30%;
 }
 
 .debug .col-25 {
